@@ -1,0 +1,31 @@
+<section class="fu-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-white "> futeared posts</h2>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor facere est eaque
+                    distinctio vero, ipsa consectetur porro magni adipisci natus ratione. Eius magnam odio voluptatum
+                    dicta quaerat at iusto autem!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-4" *ngFor="let postFus of postsFeatured">
+                <app-post-card [fuPost]="postFus"></app-post-card>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5 ">
+    <div class="col-md-12 text-center">
+        <h2>latest post</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit amet tempora facilis obcaecati, maxime,
+            rem qui ea vitae error, perspiciatis quibusdam quo doloremque praesentium placeat eaque recusandae culpa
+            dolorem.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let latest of latestPost">
+            <app-post-card [fuPost]="latest"></app-post-card>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<div class="bg-theme p-5 mt-5">
+    <div class="container">
+        <h1 class="text-white ">
+            general knowledge
+        </h1>
+        <p class="text-white ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem nulla
+            iste quae iusto nesciunt
+            architecto officiis, nisi, id dolor voluptas ad! Aliquam odio soluta ex dolor, nobis dolores deserunt.</p>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let post of categoryData">
+            <app-post-card [fuPost]="post"></app-post-card>
+        </div>
+       
+    </div>
+</div>

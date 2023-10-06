@@ -1,0 +1,19 @@
+<div class="card" *ngIf="fuPost" [routerLink]="['/post',fuPost.id]">
+    <img [src]="fuPost.data.postImgPath" alt="" class="card-img-top ">
+    <div class="card-body">
+        <small class="bg-light text-danger text-center ">
+            {{fuPost.data.category.category}}
+        </small>
+        <small class="bg-light text-success  text-center m-sm-3  ">
+            featucer
+        </small>
+        <small class="bg-light text-info  text-center m-sm-3 ">
+            views- {{fuPost.data.views}}
+        </small>
+        <h5 class="mt-1">{{fuPost.data.title}}</h5>
+        <p>.{{fuPost.data.excerpt}}</p>
+        <small class="bg-light text-warning   text-center m-sm-3 ">
+            last update - {{fuPost.data.createAt.toMillis() |date}}
+        </small>
+    </div>
+</div>
